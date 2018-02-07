@@ -4,6 +4,10 @@
 
 A simple library that uses the @angular/cdk library to give a quick way of portaling(?) content outside of your component.
 
+## Demo
+
+[StackBlitz demo](https://stackblitz.com/edit/angular-content-portal)
+
 ## Installation
 
 To install this library, run:
