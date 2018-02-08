@@ -1,6 +1,7 @@
 # Node
 node_modules/*
 npm-debug.log
+.npmrc
 
 # TypeScript
 src/*.js
@@ -33,3 +34,5 @@ dist/*
 
 # Playground tmp files
 .playground
+
+
