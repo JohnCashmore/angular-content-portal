@@ -31,6 +31,8 @@ Desktop.ini
 
 # Build files
 dist/*
+coverage
+.ng_pkg_build
 
 # Playground tmp files
 .playground
