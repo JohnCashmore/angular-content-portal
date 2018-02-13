@@ -9,7 +9,8 @@ import { AngularContentPortalModule } from './modules/portal/portal.module';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AngularContentPortalModule.forRoot()
   ],
   exports: [
     AngularContentPortalModule
