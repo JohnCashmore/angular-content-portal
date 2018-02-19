@@ -1,6 +1,6 @@
 # angular-content-portal
 
-[![Build Status](https://travis-ci.org/angular/angular-cli.svg?branch=master)](https://travis-ci.org/angular/angular-cli) [![Coverage Status](https://coveralls.io/repos/github/JohnCashmore/angular-content-portal/badge.svg?branch=master)](https://coveralls.io/github/JohnCashmore/angular-content-portal?branch=master) [![dependencies Status](https://david-dm.org/johncashmore/angular-content-portal/status.svg)](https://david-dm.org/johncashmore/angular-content-portal) [![devDependencies Status](https://david-dm.org/johncashmore/angular-content-portal/dev-status.svg)](https://david-dm.org/johncashmore/angular-content-portal?type=dev)
+[![Build Status](https://travis-ci.org/johncashmore/angular-content-portal.svg?branch=master)](https://travis-ci.org/angular/angular-cli) [![Coverage Status](https://coveralls.io/repos/github/JohnCashmore/angular-content-portal/badge.svg?branch=master)](https://coveralls.io/github/JohnCashmore/angular-content-portal?branch=master) [![dependencies Status](https://david-dm.org/johncashmore/angular-content-portal/status.svg)](https://david-dm.org/johncashmore/angular-content-portal) [![devDependencies Status](https://david-dm.org/johncashmore/angular-content-portal/dev-status.svg)](https://david-dm.org/johncashmore/angular-content-portal?type=dev)
 
 A simple library that uses the @angular/cdk library to give a quick way of portaling(?) content outside of your component.
 
