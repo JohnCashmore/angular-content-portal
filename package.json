@@ -1,6 +1,7 @@
 {
   "name": "angular-content-portal",
   "version": "0.1.13",
+  "description": "A simple library that uses the @angular/cdk library to give a quick way of portaling(?) content outside of your component.",
   "repository": {
     "type": "git",
     "url": "https://github.com/JohnCashmore/angular-content-portal"
@@ -26,6 +27,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "packagr": "ng-packagr -p ng-package.json",
+    "pub": "ng-packagr -p ng-package.json && npm publish dist",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "dependencies": {
