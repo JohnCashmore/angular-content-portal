@@ -1,3 +1,4 @@
 {
-  "extends": ["config:base", "schedule:nonOfficeHours"]
+  "extends": ["config:base", "schedule:nonOfficeHours"],
+  "baseBranches": ["develop"]
 }
