@@ -1,10 +1,4 @@
-import {
-  Component,
-  Input,
-  OnInit,
-  OnDestroy,
-  AfterViewInit
-} from '@angular/core';
+import { Component, Input, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 
 import { ACPortalService } from './portal.service';
 
@@ -13,10 +7,9 @@ import { ACPortalService } from './portal.service';
   template: `<ng-template [cdkPortalHost]="portalService.portal$(name) | async"></ng-template>`
 })
 export class ACPortalOutletComponent implements OnInit, OnDestroy {
-  @Input()
-  name: string = null;
+  @Input() name: string = null;
 
-  constructor(public portalService: ACPortalService) { }
+  constructor(public portalService: ACPortalService) {}
 
   ngOnInit() {
     setTimeout(() => {

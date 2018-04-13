@@ -9,18 +9,9 @@ import { ACPortalOutletComponent } from './portal-outlet.component';
 export * from './portal.service';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    PortalModule
-  ],
-  declarations: [
-    ACPortalOutletComponent,
-    ACPortalComponent
-  ],
-  exports: [
-    ACPortalOutletComponent,
-    ACPortalComponent
-  ]
+  imports: [CommonModule, PortalModule],
+  declarations: [ACPortalOutletComponent, ACPortalComponent],
+  exports: [ACPortalOutletComponent, ACPortalComponent]
 })
 export class AngularContentPortalModule {
   static forRoot(): ModuleWithProviders {

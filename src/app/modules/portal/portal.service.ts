@@ -4,11 +4,10 @@ import { Portal } from '@angular/cdk/portal';
 
 @Injectable()
 export class ACPortalService {
-
   portals: Array<BehaviorSubject<Portal<any>>> = [];
   portalsData: Array<Portal<any>> = [];
 
-  constructor() { }
+  constructor() {}
 
   portal$(name: string): void {
     return this.portals[name] ? this.portals[name].asObservable() : this.portals[name];

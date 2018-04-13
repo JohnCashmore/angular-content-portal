@@ -40,12 +40,12 @@
     "@angular/platform-browser": "5.2.9",
     "@angular/platform-browser-dynamic": "5.2.9",
     "@angular/router": "5.2.9",
+    "@angular/animations": "5.2.9",
     "core-js": "2.5.5",
     "rxjs": "5.5.10",
     "zone.js": "0.8.26"
   },
   "devDependencies": {
-    "@angular/animations": "^5.2.9",
     "@angular/cli": "1.7.4",
     "@angular/compiler-cli": "5.2.9",
     "@angular/language-service": "5.2.9",
@@ -66,6 +66,6 @@
     "protractor": "5.3.1",
     "ts-node": "5.0.1",
     "tslint": "5.9.1",
-    "typescript": "2.8.1"
+    "typescript": "^2.6.2"
   }
 }

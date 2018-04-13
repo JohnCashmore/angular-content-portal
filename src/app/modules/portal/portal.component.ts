@@ -1,13 +1,4 @@
-import {
-  Component,
-  OnInit,
-  OnDestroy,
-  ViewChild,
-  TemplateRef,
-  Input,
-  AfterViewInit,
-  ChangeDetectorRef
-} from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewChild, TemplateRef, Input, AfterViewInit, ChangeDetectorRef } from '@angular/core';
 import { TemplatePortal } from '@angular/cdk/portal';
 
 import { ACPortalService } from './portal.service';
@@ -21,14 +12,12 @@ import { ACPortalService } from './portal.service';
     `
 })
 export class ACPortalComponent implements OnDestroy, AfterViewInit {
-  @Input()
-  name: string = null;
+  @Input() name: string = null;
 
   @ViewChild('portal') portal: TemplateRef<any>;
 
   constructor(public portalService: ACPortalService, private cd: ChangeDetectorRef) {
     portalService.resetPortal(this.name);
-
   }
 
   ngAfterViewInit() {

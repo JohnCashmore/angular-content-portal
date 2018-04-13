@@ -1,1 +1,1 @@
-export * from './src/app/modules/portal/portal.module'
+export * from './src/app/modules/portal/portal.module';
