@@ -31,7 +31,6 @@
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "dependencies": {
-    "@angular/animations": "5.2.9",
     "@angular/cdk": "5.2.4",
     "@angular/common": "5.2.9",
     "@angular/compiler": "5.2.9",
@@ -46,6 +45,7 @@
     "zone.js": "0.8.26"
   },
   "devDependencies": {
+    "@angular/animations": "^5.2.9",
     "@angular/cli": "1.7.4",
     "@angular/compiler-cli": "5.2.9",
     "@angular/language-service": "5.2.9",
