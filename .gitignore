@@ -33,6 +33,7 @@ Desktop.ini
 dist/*
 coverage
 .ng_pkg_build
+dist.tgz
 
 # Playground tmp files
 .playground
