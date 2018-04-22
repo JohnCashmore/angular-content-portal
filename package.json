@@ -1,6 +1,6 @@
 {
   "name": "angular-content-portal",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "A simple library that uses the @angular/cdk library to give a quick way of portaling(?) content outside of your component.",
   "repository": {
     "type": "git",
@@ -13,7 +13,12 @@
   "bugs": {
     "url": "https://github.com/JohnCashmore/angular-content-portal/issues"
   },
-  "keywords": ["angular", "portal", "cdk", "projection"],
+  "keywords": [
+    "angular",
+    "portal",
+    "cdk",
+    "projection"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -25,7 +30,6 @@
     "pub": "ng-packagr -p ng-package.json && npm publish dist",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
-
   "dependencies": {
     "@angular/cdk": "5.2.4",
     "@angular/common": "5.2.10",
