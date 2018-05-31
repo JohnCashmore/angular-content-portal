@@ -6,7 +6,7 @@ A simple library that uses the @angular/cdk library to give a quick way of porta
 
 ## Requirements
 
-- Angular 5+
+* Angular 5+
 
 ## Demo
 
@@ -33,20 +33,13 @@ import { AppComponent } from './app.component';
 import { AngularContentPortalModule } from 'angular-content-portal';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-
-    AngularContentPortalModule.forRoot()
-  ],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AngularContentPortalModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
 ```
-
 
 ```xml
 <!-- You can now use your library component in app.component.html -->
@@ -54,7 +47,6 @@ export class AppModule { }
 ```
 
 then
-
 
 ```xml
 <!-- You can now use your library component in user/create-user.component.html -->
