@@ -11,7 +11,7 @@ export class ACPortalService {
 
   constructor() {}
 
-  portal$(name: string): void {
+  portal$(name: string): any {
     return this.portals[name] ? this.portals[name] : null;
   }
 
