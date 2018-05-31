@@ -4,7 +4,7 @@ import { ACPortalService } from './portal.service';
 
 @Component({
   selector: 'ac-portal-outlet',
-  template: `<ng-template [cdkPortalOutlet]="portalService.portal$(name) | async"></ng-template>`
+  template: `<ng-template [cdkPortalOutlet]="portalService.portal$(name)"></ng-template>`
 })
 export class ACPortalOutletComponent implements OnInit, OnDestroy {
   @Input() name: string = null;
