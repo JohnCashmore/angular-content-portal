@@ -2,7 +2,9 @@ import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { Portal } from '@angular/cdk/portal';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class ACPortalService {
   portals: Array<BehaviorSubject<Portal<any>>> = [];
   portalsData: Array<Portal<any>> = [];
@@ -10,7 +12,7 @@ export class ACPortalService {
   constructor() {}
 
   portal$(name: string): void {
-    return this.portals[name] ? this.portals[name].asObservable() : this.portals[name];
+    return this.portals[name] ? this.portals[name] : null;
   }
 
   setPortal(portal: Portal<any>, name: string): void {

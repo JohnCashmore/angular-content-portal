@@ -13,11 +13,4 @@ export * from './portal.service';
   declarations: [ACPortalOutletComponent, ACPortalComponent],
   exports: [ACPortalOutletComponent, ACPortalComponent]
 })
-export class AngularContentPortalModule {
-  static forRoot(): ModuleWithProviders {
-    return {
-      ngModule: AngularContentPortalModule,
-      providers: [ACPortalService]
-    };
-  }
-}
+export class AngularContentPortalModule {}
