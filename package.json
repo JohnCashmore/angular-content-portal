@@ -24,6 +24,7 @@
     "start": "ng serve",
     "build": "ng build --prod",
     "test": "jest --coverage",
+    "test-ci": "jest --coverage --collectCoverageFrom=src/app/modules/portal/*.ts",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "packagr": "ng-packagr -p ng-package.json",
