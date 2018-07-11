@@ -10,7 +10,7 @@ A simple library that uses the @angular/cdk library to give a quick way of porta
 
 ## Demo
 
-[StackBlitz demo](https://stackblitz.com/edit/angular-content-portal)
+[StackBlitz demo](https://stackblitz.com/github/JohnCashmore/angular-content-portal)
 
 ## Installation
 
