@@ -4,6 +4,8 @@
 
 A simple library that uses the @angular/cdk library to give a quick way of portaling(?) content outside of your component.
 
+![Rick and Morty Portal Gun](http://paulwelsh.info/angular-content-portal/portal-gun.jpg)
+
 ## Requirements
 
 * Angular 5+
