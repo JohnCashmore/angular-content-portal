@@ -1,6 +1,6 @@
 {
   "name": "angular-content-portal",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "description": "A simple library that uses the @angular/cdk library to give a quick way of portaling(?) content outside of your component.",
   "repository": {
     "type": "git",
@@ -39,7 +39,7 @@
   ],
   "dependencies": {
     "@angular/animations": "6.1.4",
-    "@angular/cdk": "^6.4.6",
+    "@angular/cdk": "6.4.6",
     "@angular/common": "6.1.4",
     "@angular/compiler": "6.1.4",
     "@angular/core": "6.1.4",
@@ -56,7 +56,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.7.5",
-    "@angular/cli": "^6.1.5",
+    "@angular/cli": "6.1.5",
     "@angular/compiler-cli": "6.1.4",
     "@angular/language-service": "6.1.4",
     "@types/jasmine": "2.8.8",
