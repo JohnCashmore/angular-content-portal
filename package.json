@@ -10,6 +10,7 @@
     "name": "John Cashmore",
     "email": "john@cashmo.re"
   },
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/JohnCashmore/angular-content-portal/issues"
   },
