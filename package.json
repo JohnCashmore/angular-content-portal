@@ -53,7 +53,7 @@
     "@briebug/jest-schematic": "1.7.0",
     "core-js": "2.6.9",
     "rxjs": "6.5.3",
-    "rxjs-compat": "6.5.2",
+    "rxjs-compat": "6.5.3",
     "zone.js": "0.10.2"
   },
   "devDependencies": {
