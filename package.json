@@ -54,7 +54,7 @@
     "core-js": "2.6.11",
     "rxjs": "6.5.4",
     "rxjs-compat": "6.5.4",
-    "zone.js": "0.10.2"
+    "zone.js": "0.10.3"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.13.9",
