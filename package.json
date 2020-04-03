@@ -52,7 +52,7 @@
     "@angular/router": "7.2.16",
     "@briebug/jest-schematic": "1.7.0",
     "core-js": "2.6.11",
-    "rxjs": "6.5.4",
+    "rxjs": "6.5.5",
     "rxjs-compat": "6.5.4",
     "zone.js": "0.10.3"
   },
