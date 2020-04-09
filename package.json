@@ -51,7 +51,7 @@
     "@angular/platform-browser-dynamic": "7.2.16",
     "@angular/router": "7.2.16",
     "@briebug/jest-schematic": "1.7.0",
-    "core-js": "2.6.11",
+    "core-js": "3.6.5",
     "rxjs": "6.5.4",
     "rxjs-compat": "6.5.4",
     "zone.js": "0.10.3"
