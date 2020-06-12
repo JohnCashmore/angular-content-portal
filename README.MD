@@ -57,20 +57,6 @@ then
 </ac-portal>
 ```
 
-## Development
-
-To generate all `*.js`, `*.d.ts` and `*.metadata.json` files:
-
-```bash
-$ npm run packagr
-```
-
-To lint all `*.ts` files:
-
-```bash
-$ npm run lint
-```
-
 ## License
 
 MIT © [John Cashmore](mailto:john@cashmo.re)
