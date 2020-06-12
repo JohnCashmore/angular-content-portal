@@ -4,70 +4,37 @@
   "newProjectRoot": "projects",
   "projects": {
     "angular-content-portal": {
-      "root": "",
-      "sourceRoot": "src",
-      "projectType": "application",
+      "projectType": "library",
+      "root": "projects/angular-content-portal",
+      "sourceRoot": "projects/angular-content-portal/src",
+      "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-ng-packagr:build",
           "options": {
-            "outputPath": "dist",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "tsConfig": "src/tsconfig.app.json",
-            "polyfills": "src/polyfills.ts",
-            "assets": [
-              "src/assets",
-              "src/favicon.ico"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
-            "scripts": []
+            "tsConfig": "projects/angular-content-portal/tsconfig.lib.json",
+            "project": "projects/angular-content-portal/ng-package.json"
           },
           "configurations": {
             "production": {
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "extractCss": true,
-              "namedChunks": false,
-              "aot": true,
-              "extractLicenses": true,
-              "vendorChunk": false,
-              "buildOptimizer": true,
-              "fileReplacements": [
-                {
-                  "replace": "src/environments/environment.ts",
-                  "with": "src/environments/environment.prod.ts"
-                }
-              ]
+              "tsConfig": "projects/angular-content-portal/tsconfig.lib.prod.json"
             }
           }
         },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "browserTarget": "angular-content-portal:build"
-          },
-          "configurations": {
-            "production": {
-              "browserTarget": "angular-content-portal:build:production"
-            }
-          }
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "browserTarget": "angular-content-portal:build"
+            "main": "projects/angular-content-portal/src/test.ts",
+            "tsConfig": "projects/angular-content-portal/tsconfig.spec.json",
+            "karmaConfig": "projects/angular-content-portal/karma.conf.js"
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "src/tsconfig.app.json",
-              "src/tsconfig.spec.json"
+              "projects/angular-content-portal/tsconfig.lib.json",
+              "projects/angular-content-portal/tsconfig.spec.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -75,41 +42,6 @@
           }
         }
       }
-    },
-    "angular-content-portal-e2e": {
-      "root": "",
-      "sourceRoot": "",
-      "projectType": "application",
-      "architect": {
-        "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
-          "options": {
-            "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "angular-content-portal:serve"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "e2e/tsconfig.e2e.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    }
-  },
-  "defaultProject": "angular-content-portal",
-  "schematics": {
-    "@schematics/angular:component": {
-      "prefix": "ac",
-      "styleext": "scss"
-    },
-    "@schematics/angular:directive": {
-      "prefix": "ac"
-    }
-  }
+    }},
+  "defaultProject": "angular-content-portal"
 }

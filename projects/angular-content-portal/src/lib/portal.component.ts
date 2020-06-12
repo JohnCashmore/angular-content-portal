@@ -1,6 +1,5 @@
 import {
   Component,
-  OnInit,
   OnDestroy,
   ViewChild,
   TemplateRef,
@@ -23,7 +22,7 @@ import { ACPortalService } from './portal.service';
 export class ACPortalComponent implements OnDestroy, AfterViewInit {
   @Input() name: string = null;
 
-  @ViewChild('portal') portal: TemplateRef<any>;
+  @ViewChild('portal', {static: false}) portal !: TemplateRef<any>;
 
   constructor(
     public portalService: ACPortalService,

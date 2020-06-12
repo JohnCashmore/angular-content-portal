@@ -2,8 +2,7 @@ import {
   Component,
   Input,
   OnInit,
-  OnDestroy,
-  AfterViewInit
+  OnDestroy
 } from '@angular/core';
 
 import { ACPortalService } from './portal.service';

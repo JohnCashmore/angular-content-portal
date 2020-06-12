@@ -1,89 +1,49 @@
 {
-  "name": "angular-content-portal",
-  "version": "7.1.4",
-  "description": "A simple library that uses the @angular/cdk library to give a quick way of portaling(?) content outside of your component.",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/JohnCashmore/angular-content-portal"
-  },
-  "author": {
-    "name": "John Cashmore",
-    "email": "john@cashmo.re"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/JohnCashmore/angular-content-portal/issues"
-  },
-  "keywords": [
-    "angular",
-    "portal",
-    "cdk",
-    "projection"
-  ],
+  "name": "angular-content-portal-new",
+  "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
-    "test": "jest --coverage",
-    "test-ci": "jest --coverage --collectCoverageFrom=src/app/modules/portal/*.ts",
+    "build": "ng build",
+    "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "packagr": "ng-packagr -p ng-package.json",
-    "pub": "ng-packagr -p ng-package.json && npm publish dist",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
-    "test:watch": "jest --watch",
-    "precise-commits": "precise-commits"
+    "e2e": "ng e2e"
   },
-  "coverageReporters": [
-    "text",
-    "cobertura",
-    "lcov"
-  ],
+  "private": true,
   "dependencies": {
-    "@angular/animations": "7.2.16",
-    "@angular/cdk": "7.3.7",
-    "@angular/common": "7.2.16",
-    "@angular/compiler": "7.2.16",
-    "@angular/core": "7.2.16",
-    "@angular/forms": "7.2.16",
-    "@angular/http": "7.2.16",
-    "@angular/platform-browser": "7.2.16",
-    "@angular/platform-browser-dynamic": "7.2.16",
-    "@angular/router": "7.2.16",
-    "@briebug/jest-schematic": "1.7.0",
-    "core-js": "2.6.11",
-    "rxjs": "6.5.4",
-    "rxjs-compat": "6.5.4",
-    "zone.js": "0.10.3"
+    "@angular/animations": "~9.1.7",
+    "@angular/common": "~9.1.7",
+    "@angular/compiler": "~9.1.7",
+    "@angular/core": "~9.1.7",
+    "@angular/forms": "~9.1.7",
+    "@angular/platform-browser": "~9.1.7",
+    "@angular/platform-browser-dynamic": "~9.1.7",
+    "@angular/router": "~9.1.7",
+    "rxjs": "~6.5.4",
+    "tslib": "^1.10.0",
+    "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "0.13.9",
-    "@angular/cli": "7.3.9",
-    "@angular/compiler-cli": "7.2.16",
-    "@angular/language-service": "7.2.16",
-    "@types/jasmine": "3.5.10",
-    "@types/jasminewd2": "2.0.8",
-    "@types/node": "9.6.55",
-    "codelyzer": "5.2.2",
-    "coveralls": "3.0.11",
-    "husky": "2.7.0",
-    "jasmine-core": "2.99.1",
-    "jasmine-spec-reporter": "4.2.1",
-    "jest": "24.9.0",
-    "jest-preset-angular": "6.0.2",
-    "karma-phantomjs-launcher": "1.0.4",
-    "ng-packagr": "5.7.1",
-    "precise-commits": "1.0.2",
-    "prettier": "1.19.1",
-    "protractor": "5.4.3",
-    "ts-node": "8.8.1",
-    "tsickle": "0.38.1",
-    "tslint": "5.20.1",
-    "typescript": "3.2.4"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run precise-commits"
-    }
+    "@angular-devkit/build-angular": "~0.901.7",
+    "@angular-devkit/build-ng-packagr": "~0.901.7",
+    "@angular/cdk": "^9.2.4",
+    "@angular/cli": "~9.1.6",
+    "@angular/compiler-cli": "~9.1.7",
+    "@types/jasmine": "~3.5.0",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/node": "^12.11.1",
+    "codelyzer": "^5.1.2",
+    "jasmine-core": "~3.5.0",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~5.0.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage-istanbul-reporter": "~2.1.0",
+    "karma-jasmine": "~3.0.1",
+    "karma-jasmine-html-reporter": "^1.4.2",
+    "ng-packagr": "^9.0.0",
+    "protractor": "~5.4.3",
+    "ts-node": "~8.3.0",
+    "tslint": "~6.1.0",
+    "typescript": "~3.8.3"
   }
 }
