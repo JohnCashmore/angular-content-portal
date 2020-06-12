@@ -1,24 +1,62 @@
-# AngularContentPortal
+# angular-content-portal
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
+[![Build Status](https://travis-ci.org/JohnCashmore/angular-content-portal.svg?branch=master)](https://travis-ci.org/JohnCashmore/angular-content-portal) [![Coverage Status](https://coveralls.io/repos/github/JohnCashmore/angular-content-portal/badge.svg?branch=master)](https://coveralls.io/github/JohnCashmore/angular-content-portal?branch=master) [![dependencies Status](https://david-dm.org/johncashmore/angular-content-portal/status.svg)](https://david-dm.org/johncashmore/angular-content-portal) [![devDependencies Status](https://david-dm.org/johncashmore/angular-content-portal/dev-status.svg)](https://david-dm.org/johncashmore/angular-content-portal?type=dev) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/13e634f2f4364443bf44c3438ced9b06)](https://www.codacy.com/app/cashy/angular-content-portal?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JohnCashmore/angular-content-portal&amp;utm_campaign=Badge_Grade)
 
-## Code scaffolding
+A simple library that uses the @angular/cdk library to give a quick way of portaling(?) content outside of your component.
 
-Run `ng generate component component-name --project angular-content-portal` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project angular-content-portal`.
-> Note: Don't forget to add `--project angular-content-portal` or else it will be added to the default project in your `angular.json` file. 
+![Rick and Morty Portal Gun](http://paulwelsh.info/angular-content-portal/portal-gun.jpg)
 
-## Build
+## Requirements
 
-Run `ng build angular-content-portal` to build the project. The build artifacts will be stored in the `dist/` directory.
+* Angular 6+
 
-## Publishing
+## Demo
 
-After building your library with `ng build angular-content-portal`, go to the dist folder `cd dist/angular-content-portal` and run `npm publish`.
+[StackBlitz demo](https://stackblitz.com/github/JohnCashmore/angular-content-portal)
 
-## Running unit tests
+## Installation
 
-Run `ng test angular-content-portal` to execute the unit tests via [Karma](https://karma-runner.github.io).
+To install this library, run:
 
-## Further help
+```bash
+$ npm install angular-content-portal --save
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Using angular-content-portal
+
+From your Angular `AppModule`:
+
+```typescript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+
+import { AngularContentPortalModule } from 'angular-content-portal';
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [BrowserModule, AngularContentPortalModule],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+```
+
+```xml
+<!-- You can now use your library component in app.component.html -->
+<ac-portal-outlet name="header-actions"></ac-portal-outlet>
+```
+
+then
+
+```xml
+<!-- You can now use your library component in user/create-user.component.html -->
+<ac-portal name="header-actions">
+  <button>Add user</button>
+</ac-portal>
+```
+
+## License
+
+MIT © [John Cashmore](mailto:john@cashmo.re)
