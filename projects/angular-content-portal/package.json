@@ -2,8 +2,8 @@
   "name": "angular-content-portal",
   "version": "9.0.2",
   "peerDependencies": {
-    "@angular/common": "^9.1.9",
-    "@angular/core": "^9.1.9",
+    "@angular/common": "^9.1.9 || ^10.0.0",
+    "@angular/core": "^9.1.9 || ^10.0.0",
     "@angular/cdk": "^9.2.4"
   },
   "dependencies": {
