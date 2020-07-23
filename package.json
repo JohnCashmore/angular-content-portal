@@ -29,7 +29,7 @@
     "@angular/cdk": "10.1.0",
     "@angular/cli": "9.1.7",
     "@angular/compiler-cli": "10.0.5",
-    "@types/jasmine": "3.5.10",
+    "@types/jasmine": "3.5.11",
     "@types/jasminewd2": "2.0.8",
     "@types/node": "12.12.42",
     "codelyzer": "5.2.2",
